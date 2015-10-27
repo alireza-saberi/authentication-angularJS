@@ -165,3 +165,5 @@ Authorization a.k.a. access control in AngularJS doesn’t really exist. Since w
 
 AngularJS comes with several directives to show or hide an element based on some scope property or expression: ngShow, ngHide, ngIf and ngSwitch. The first two will use a style attribute to hide the element, while the last two will actually remove the element from the DOM.
 The first solution (hiding it) is best used only when the expression changes frequently and the element doesn’t contain a lot of template logic and scope references. The reason for this is that any template logic within a hidden element will still be reevaluated on each digest cycle, slowing down the application. The second solution will remove the DOM element entirely, including any event handlers and scope bindings. Changing the DOM is a lot of work for the browser (hence the reason for using ngShow/ngHide in some cases), but worth the effort most of the time. Since user access doesn’t change often, using ngIf or ngSwitch is the best choice
+
+For the rest, follow this [article](https://medium.com/opinionated-angularjs/techniques-for-authentication-in-angularjs-applications-7bbf0346acec#.y9lqbyk2z) please.
